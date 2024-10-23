@@ -3,19 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A3BA42CC514790033F6B7 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 182A3BA32CC514790033F6B7 /* Core */; };
+		182A3BAA2CC516830033F6B7 /* Portfolio in Frameworks */ = {isa = PBXBuildFile; productRef = 182A3BA92CC516830033F6B7 /* Portfolio */; };
+		182A3BAC2CC5197E0033F6B7 /* Calendar in Frameworks */ = {isa = PBXBuildFile; productRef = 182A3BAB2CC5197E0033F6B7 /* Calendar */; };
 		182AA75C2CC511DB000D2073 /* EmporiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AA75B2CC511DB000D2073 /* EmporiumApp.swift */; };
-		182AA75E2CC511DB000D2073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182AA75D2CC511DB000D2073 /* ContentView.swift */; };
 		182AA7602CC511DC000D2073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182AA75F2CC511DC000D2073 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		182AA7582CC511DB000D2073 /* Emporium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emporium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182AA75B2CC511DB000D2073 /* EmporiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmporiumApp.swift; sourceTree = "<group>"; };
-		182AA75D2CC511DB000D2073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		182AA75F2CC511DC000D2073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182AA7612CC511DC000D2073 /* Emporium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emporium.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -25,16 +26,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A3BA42CC514790033F6B7 /* Core in Frameworks */,
+				182A3BAC2CC5197E0033F6B7 /* Calendar in Frameworks */,
+				182A3BAA2CC516830033F6B7 /* Portfolio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182A3BA82CC516830033F6B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		182AA74F2CC511DB000D2073 = {
 			isa = PBXGroup;
 			children = (
 				182AA75A2CC511DB000D2073 /* Emporium */,
+				182A3BA82CC516830033F6B7 /* Frameworks */,
 				182AA7592CC511DB000D2073 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,20 +62,11 @@
 		182AA75A2CC511DB000D2073 /* Emporium */ = {
 			isa = PBXGroup;
 			children = (
-				182AA76A2CC511E9000D2073 /* Views */,
 				182AA75B2CC511DB000D2073 /* EmporiumApp.swift */,
 				182AA75F2CC511DC000D2073 /* Assets.xcassets */,
 				182AA7612CC511DC000D2073 /* Emporium.entitlements */,
 			);
 			path = Emporium;
-			sourceTree = "<group>";
-		};
-		182AA76A2CC511E9000D2073 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				182AA75D2CC511DB000D2073 /* ContentView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +113,10 @@
 				Base,
 			);
 			mainGroup = 182AA74F2CC511DB000D2073;
+			packageReferences = (
+				182A3BA22CC514790033F6B7 /* XCLocalSwiftPackageReference "Emporium/Core" */,
+				182A3BA52CC514860033F6B7 /* XCLocalSwiftPackageReference "Emporium/Feature" */,
+			);
 			productRefGroup = 182AA7592CC511DB000D2073 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182AA75E2CC511DB000D2073 /* ContentView.swift in Sources */,
 				182AA75C2CC511DB000D2073 /* EmporiumApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +278,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zrb.Emporium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,10 +313,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zrb.Emporium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,6 +350,34 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		182A3BA22CC514790033F6B7 /* XCLocalSwiftPackageReference "Emporium/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Emporium/Core;
+		};
+		182A3BA52CC514860033F6B7 /* XCLocalSwiftPackageReference "Emporium/Feature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Emporium/Feature;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		182A3BA32CC514790033F6B7 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		182A3BA92CC516830033F6B7 /* Portfolio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 182A3BA52CC514860033F6B7 /* XCLocalSwiftPackageReference "Emporium/Feature" */;
+			productName = Portfolio;
+		};
+		182A3BAB2CC5197E0033F6B7 /* Calendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 182A3BA52CC514860033F6B7 /* XCLocalSwiftPackageReference "Emporium/Feature" */;
+			productName = Calendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 182AA7502CC511DB000D2073 /* Project object */;
 }
